@@ -1,0 +1,48 @@
+{
+  "name": "csvg",
+  "version": "0.0.1",
+  "description": "A simple SVG reader/writter",
+  "main": "src/index.ts",
+  "types": "types/index.d.ts",
+  "bin": {
+    "csvg": "src/index.ts"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "types/",
+    "test/",
+    "README.md",
+    "tsconfig.json",
+    "gulpfile.js",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "gulp compil",
+    "clean": "rm src/**/*.js && rm src/*.js && rm src/**/*.d.ts && rm src/*.d.ts && rm dist/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Poulpinounette/CanvasSVG.git"
+  },
+  "keywords": [
+    "svg",
+    "canvas"
+  ],
+  "author": "poulpi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Poulpinounette/CanvasSVG/issues"
+  },
+  "homepage": "https://github.com/Poulpinounette/CanvasSVG#readme",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.0",
+    "tsify": "^4.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "typescript": "^3.2.2",
+    "@types/node": "^10.12.18"
+  }
+}
